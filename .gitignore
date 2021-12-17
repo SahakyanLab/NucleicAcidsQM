@@ -1,0 +1,5 @@
+# a comment - this is ignored
+# no file with certain endings
+*~
+*.DS_Store
+
