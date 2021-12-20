@@ -1,6 +1,6 @@
-# Calculate rmsd
+#BuildOptimizeDNA
 
-A code to calculate rmsd of DNA sequences.
+A code for building DNA model and optimizing them by AmberTools21
 
 
 
