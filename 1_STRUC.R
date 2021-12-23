@@ -16,7 +16,7 @@ options(warn = 2)
 toDo = NULL
 
 toDo$generateKmers = F
-Kmer.num = 8
+Kmer.num = 7
 
 toDo$initDNA      = F
 
