@@ -1,12 +1,11 @@
 ################################################################################
 #
-# AIM: Build and optimize K-mer DNA
+# AIM: QM calculation of K-mer DNA
 #
 # TASKS
-#   1) To generate all sequences of K-mer DNA
-#   2) To build DNA structure 
-#   3) To optimise the DNA structure
-#   4) To calculate RMSD
+#   1) To calculate K-mer DNA by MOPAC
+#   2) To summarize the results of QM calculation 
+#   3) To calculate RMSD
 #
 
 ## Configuration ###############################################################
