@@ -15,32 +15,33 @@ options(warn = 2)
 ## Task  #######################################################################
 toDo = NULL
 
-toDo$generateKmers = F
-Kmer.num = 7
+toDo$generateKmers = T
+Kmer.num = 4
 
-toDo$initDNA      = F
+toDo$initDNA      = T
 
-toDo$optDNA       = F
+toDo$optDNA       = T
 opt.igb = 1
-opt.maxcyc = 5000 
-opt.ncyc = 2500
+opt.maxcyc = 10 
+opt.ncyc = 5
 opt.atoms = "all_atoms"           
 
-toDo$calculateRmsd = F
+toDo$calculateRmsd = T
 rmsd.atom = "onlyP"
 rmsd.align = TRUE
-rmsd.targetpdb = "min_igb_1_step_5000_optimize_all_atoms.pdb"
+rmsd.targetpdb = "min_igb_1_step_10_optimize_all_atoms.pdb"
 
 
 ## input conformation ##########################################################
 conformation = "DNA_B_Handbook1999"
 strand       = "duplex"
+mer_num      = Kmer.num
 neutralise   = FALSE
 solvate      = FALSE
 
 
 # location of output folder
-output.path = paste0("data/", conformation,"_",strand)
+output.path = paste0("data/", conformation,"_",strand,"_",mer_num,"mer")
 if (neutralise) {output.path = paste0(output.path, "_neutrized")}
 if (solvate) {output.path = paste0(output.path, "_solvated")}
 
