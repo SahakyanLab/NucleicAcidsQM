@@ -15,21 +15,21 @@ options(warn = 2)
 ## Task  #######################################################################
 toDo = NULL
 
-toDo$generateKmers = T
-Kmer.num = 4
+toDo$generateKmers = F
+Kmer.num = 7
 
 toDo$initDNA      = T
 
 toDo$optDNA       = T
 opt.igb = 1
-opt.maxcyc = 10 
-opt.ncyc = 5
+opt.maxcyc = 5000 
+opt.ncyc = 2500
 opt.atoms = "all_atoms"           
 
 toDo$calculateRmsd = T
 rmsd.atom = "onlyP"
 rmsd.align = TRUE
-rmsd.targetpdb = "min_igb_1_step_10_optimize_all_atoms.pdb"
+rmsd.targetpdb = "min_igb_1_step_5000_optimize_all_atoms.pdb"
 
 
 ## input conformation ##########################################################
@@ -47,14 +47,13 @@ if (solvate) {output.path = paste0(output.path, "_solvated")}
 
 
 # AmberTools path
-ambertools.path <- "/opt/anaconda3/envs/AmberTools21"
+ambertools.path <- "/Users/kairimasuda/opt/anaconda3/envs/AmberTools21"
 Sys.setenv(PATH = paste0(ambertools.path, "/bin:", Sys.getenv("PATH")))
 Sys.setenv(AMBERHOME = ambertools.path)
 
-
 ## Dependant functions #########################################################
 
-source("lib/GenerateKmers.R")
+source("lib/generateKmers.R")
 source("lib/buildDNA.R")
 source("lib/genTopCoor.R")
 source("lib/minimise.R")
