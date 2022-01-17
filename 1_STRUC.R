@@ -18,7 +18,7 @@ toDo = NULL
 toDo$generateKmers = F
 Kmer.num = 7
 
-toDo$initDNA      = T
+toDo$initDNA      = F
 
 toDo$optDNA       = T
 opt.igb = 1
@@ -47,9 +47,9 @@ if (solvate) {output.path = paste0(output.path, "_solvated")}
 
 
 # AmberTools path
-ambertools.path <- "/Users/kairimasuda/opt/anaconda3/envs/AmberTools21"
-Sys.setenv(PATH = paste0(ambertools.path, "/bin:", Sys.getenv("PATH")))
-Sys.setenv(AMBERHOME = ambertools.path)
+#ambertools.path <- "/home/k/kamasuda/.conda/envs/AmberTools21"
+#Sys.setenv(PATH = paste0(ambertools.path, "/bin:", Sys.getenv("PATH")))
+#Sys.setenv(AMBERHOME = ambertools.path)
 
 ## Dependant functions #########################################################
 
@@ -94,7 +94,10 @@ if (toDo$optDNA) {
   input.seqs = "sequences.txt"
   dna.seqs <- readLines(input.seqs)
   
+  step=0
   for (dna.seq in dna.seqs) {
+    step=step+1
+    print(paste0(step,' ',dna.seq))
     output <- paste0(output.path, "/", dna.seq, "/")
     minimise(paste0(output, "dna.prmtop"),
              paste0(output, "dna.rst7"),
