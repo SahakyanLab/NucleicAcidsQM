@@ -63,7 +63,10 @@ source("lib/calculateRMSD.R")
 if (toDo$QM) {
   dna.seqs <- readLines(inputseqs)
   
+  step=0
   for (dna.seq in dna.seqs) {
+    step=step+1
+    print(paste0(step,' ',dna.seq))
     QMminimise(inputfolder  = inputfolder,
                sequence     = dna.seq,
                inputfile    = QM.targetpdb,
@@ -78,7 +81,10 @@ if (toDo$QM) {
 if (toDo$SubQM) {
   dna.seqs <- readLines(inputseqs)
   
+  step=0
   for (dna.seq in dna.seqs) {
+    step=step+1
+    print(paste0(step,' ',dna.seq))
     SubQMcal(
       inputfolder  = inputfolder,
       sequence     = dna.seq,
