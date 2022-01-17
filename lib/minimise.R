@@ -51,7 +51,7 @@ minimise <- function(prmtop, coor, maxcyc, ncyc, target,
   
   system(cmd)
   
-  # output pdb file after minimization   
+  #output pdb file after minimization   
   min_pdb <- paste0(output.path, condition,".pdb")
   min_coor <-paste0(output.path, condition, ".ncrst")
   system(paste0("ambpdb -p ", prmtop, " -c ", min_coor, " > ", min_pdb))
