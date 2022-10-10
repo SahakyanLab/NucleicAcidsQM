@@ -10,3 +10,4 @@ Research and development code for MM and QM modelling on nucleic acids.
 (2) Run compile_data.R
 
 Extract and complie features obtained from the above calculation.
+Obtained datas are put at ./compiled_data directory.
