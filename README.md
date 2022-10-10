@@ -8,4 +8,5 @@ Research and development code for MM and QM modelling on nucleic acids.
 4) Summary of features are put at ./data directory.
 
 (2) Run compile_data.R
+
 Extract and complie features obtained from the above calculation.
