@@ -8,21 +8,21 @@ kmer_num=7
 
 MullikCharge_add = F
 MullikCharge_res_nums=c(1,2,3,4,5,6,7)
-MullikCharge_data=c("B_ds"     = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"B_ssPlus" = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"B_ssMinus"= "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"B_del1"   = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"B_del2"   = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    "A_ds"     = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"A_ssPlus" = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"A_ssMinus"= "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"A_del1"   = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"A_del2"   = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    "Z_ds"     = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")#,
-                    #"Z_ssPlus" = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"Z_ssMinus"= "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"Z_del1"   = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                    #"Z_del2"   = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
+MullikCharge_data=c("B_ds"     = "./data/DNA_B_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"B_ssPlus" = "./data/DNA_B_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"B_ssMinus"= "./data/DNA_B_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"B_del1"   = "./data/DNA_B_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"B_del2"   = "./data/DNA_B_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    "A_ds"     = "./data/DNA_A_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"A_ssPlus" = "./data/DNA_A_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"A_ssMinus"= "./data/DNA_A_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"A_del1"   = "./data/DNA_A_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"A_del2"   = "./data/DNA_A_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    "Z_ds"     = "./data/DNA_Z_Handbook1999/Mulliken_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")#,
+                    #"Z_ssPlus" = "./data/DNA_Z_Handbook1999/Mulliken_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"Z_ssMinus"= "./data/DNA_Z_Handbook1999/Mulliken_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"Z_del1"   = "./data/DNA_Z_Handbook1999/Mulliken_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                    #"Z_del2"   = "./data/DNA_Z_Handbook1999/Mulliken_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
 MullikCharge_raw_output="./compiled_data/Mullik_Charge_raw.txt"
 MullikCharge_cal_output="./compiled_data/Mullik_Charge.txt"
 
@@ -36,21 +36,21 @@ MullikPop_cal_output="./compiled_data/Mullik_Density.txt"
 
 ESPCharge_add = F
 ESPCharge_res_nums=c(1,2,3,4,5,6,7)
-ESPCharge_data=c("B_ds"      = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"B_ssPlus"  = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"B_ssMinus" = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"B_del1"    = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"B_del2"    = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 "A_ds"      = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"A_ssPlus"  = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"A_ssMinus" = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"A_del1"    = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"A_del2"    = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 "Z_ds"      = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")#,
-                 #"Z_ssPlus"  = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"Z_ssMinus" = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"Z_del1"    = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-                 #"Z_del2"    = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
+ESPCharge_data=c("B_ds"      = "./data/DNA_B_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"B_ssPlus"  = "./data/DNA_B_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"B_ssMinus" = "./data/DNA_B_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"B_del1"    = "./data/DNA_B_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"B_del2"    = "./data/DNA_B_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 "A_ds"      = "./data/DNA_A_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"A_ssPlus"  = "./data/DNA_A_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"A_ssMinus" = "./data/DNA_A_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"A_del1"    = "./data/DNA_A_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"A_del2"    = "./data/DNA_A_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 "Z_ds"      = "./data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")#,
+                 #"Z_ssPlus"  = "./data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"Z_ssMinus" = "./data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"Z_del1"    = "./data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+                 #"Z_del2"    = "./data/DNA_Z_Handbook1999/ESPcharge_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
 
 ESPCharge_raw_output="./compiled_data/ESP_Charge_raw.txt"
 ESPCharge_cal_output="./compiled_data/ESP_Charge.txt"
@@ -64,12 +64,12 @@ ESPPop_cal_output="./compiled_data/ESP_Density.txt"
 
 Curves_add = F
 Curves_res_nums=c(1,2,3,4,5,6,7)
-Curves_data=c("B_ds"     = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-              "B_ds_comp"= "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-              "A_ds"     = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-              "A_ds_comp"= "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-              "Z_ds"     = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-              "Z_ds_comp"= "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
+Curves_data=c("B_ds"     = "./data/DNA_B_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+              "B_ds_comp"= "./data/DNA_B_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+              "A_ds"     = "./data/DNA_A_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+              "A_ds_comp"= "./data/DNA_A_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+              "Z_ds"     = "./data/DNA_Z_Handbook1999/Various_mechanical_parameter_of_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+              "Z_ds_comp"= "./data/DNA_Z_Handbook1999/Various_mechanical_parameter_of_comple_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
 Curves_output="./compiled_data/Curves.txt"
 
 
@@ -81,21 +81,21 @@ DNAshape_output="./1_compiled_data/DNAshape_raw.txt"
 
 
 Summary_add = T
-Summary_data=c("B_ds"     = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "B_ssPlus" = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "B_ssMinus"= "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "B_del1"   = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "B_del2"   = "../2022_3_25_BDNA_QMopt/data/DNA_B_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "A_ds"     = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "A_ssPlus" = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "A_ssMinus"= "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "A_del1"   = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "A_del2"   = "../2022_3_25_ADNA_QMopt/data/DNA_A_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "Z_ds"     = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "Z_ssPlus" = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "Z_ssMinus"= "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "Z_del1"   = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
-               "Z_del2"   = "../2022_3_25_ZDNA_QMopt/data/DNA_Z_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
+Summary_data=c("B_ds"     = "./data/DNA_B_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "B_ssPlus" = "./data/DNA_B_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "B_ssMinus"= "./data/DNA_B_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "B_del1"   = "./data/DNA_B_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "B_del2"   = "./data/DNA_B_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "A_ds"     = "./data/DNA_A_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "A_ssPlus" = "./data/DNA_A_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "A_ssMinus"= "./data/DNA_A_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "A_del1"   = "./data/DNA_A_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "A_del2"   = "./data/DNA_A_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "Z_ds"     = "./data/DNA_Z_Handbook1999/summary_of_SubQM_duplex_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "Z_ssPlus" = "./data/DNA_Z_Handbook1999/summary_of_SubQM_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "Z_ssMinus"= "./data/DNA_Z_Handbook1999/summary_of_SubQM_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "Z_del1"   = "./data/DNA_Z_Handbook1999/summary_of_SubQM_del_mid_1st_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt",
+               "Z_del2"   = "./data/DNA_Z_Handbook1999/summary_of_SubQM_del_mid_2nd_strand_sp_from_QMopt_PM6-DH+_COSMO_from_MMopt_igb_1_step_5000_target_all_atoms.txt")
 summary_raw_output="./compiled_data/energy.txt"
 summary_cal_output="./compiled_data/denergy.txt"
 #summary2_cal_output="./compiled_data/summary2_cal.txt" #Summary between A, B, and Z conformations
