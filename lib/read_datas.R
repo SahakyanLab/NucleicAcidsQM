@@ -3,10 +3,10 @@ read_charge<-function(table, mid_res_num){
   table=filter(table, res_num==mid_res_num)
   
   phos_atoms=c("P","OP1","OP2")
-  suger_atoms=c("O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'")
+  sugar_atoms=c("O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'")
   phos=filter(table,atom_name %in% phos_atoms) %>% group_by(seq) %>%summarise(phosphate = mean(charge))
-  suger=filter(table,atom_name %in% suger_atoms) %>% group_by(seq) %>%summarise(suger = mean(charge))
-  base=filter(table,!atom_name %in% append(phos_atoms,suger_atoms)) %>% group_by(seq) %>%summarise(base = mean(charge))
+  sugar=filter(table,atom_name %in% sugar_atoms) %>% group_by(seq) %>%summarise(sugar = mean(charge))
+  base=filter(table,!atom_name %in% append(phos_atoms,sugar_atoms)) %>% group_by(seq) %>%summarise(base = mean(charge))
   
   table$atom_name_new <- paste0(table$res_name,"_", table$atom_name)
   table=select(table,seq, atom_name_new, charge)
@@ -14,7 +14,7 @@ read_charge<-function(table, mid_res_num){
   
   if(ncol(table)>1){
     table=left_join(table, phos, by = "seq")
-    table=left_join(table, suger, by = "seq")
+    table=left_join(table, sugar, by = "seq")
     table=left_join(table, base, by = "seq")
   }
   return(table)    
@@ -24,10 +24,10 @@ read_population<-function(table, mid_res_num){
   table=filter(table, res_num==mid_res_num)
   
   phos_atoms=c("P","OP1","OP2")
-  suger_atoms=c("O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'")
+  sugar_atoms=c("O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'")
   phos=filter(table,atom_name %in% phos_atoms) %>% group_by(seq) %>%summarise(phosphate = mean(population))
-  suger=filter(table,atom_name %in% suger_atoms) %>% group_by(seq) %>%summarise(suger = mean(population))
-  base=filter(table,!atom_name %in% append(phos_atoms,suger_atoms)) %>% group_by(seq) %>%summarise(base = mean(population))
+  sugar=filter(table,atom_name %in% sugar_atoms) %>% group_by(seq) %>%summarise(sugar = mean(population))
+  base=filter(table,!atom_name %in% append(phos_atoms,sugar_atoms)) %>% group_by(seq) %>%summarise(base = mean(population))
   
   table$atom_name_new <- paste0(table$res_name,"_", table$atom_name)
   table=select(table,seq, atom_name_new, population)
@@ -35,7 +35,7 @@ read_population<-function(table, mid_res_num){
   
   if(ncol(table)>1){
     table=left_join(table, phos, by = "seq")
-    table=left_join(table, suger, by = "seq")
+    table=left_join(table, sugar, by = "seq")
     table=left_join(table, base, by = "seq")
   }
   
@@ -145,21 +145,23 @@ make_raw_table<-function(table,seq_table_raw,j,kmer_num,flag,type,type_name){
 make_cal_table<-function(table,seq_table_cal,j,kmer_num,flag, type, type_name){
   cal_values=function(table1,type){
     phos_atoms=c("P","OP1","OP2")
-    suger_atoms=c("HO5'","O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'","HO3'")
+    sugar_atoms=c("HO5'","O5'","C5'","H5'","H5''","C4'","H4'","O4'","C1'","H1'","C3'","H3'","C2'","H2'","H2''","O3'","HO3'")
+    
+    table=distinct(select(table1,seq))
 
     phos_mean=filter(table1,atom_name %in% phos_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(phos_mean = mean))
     phos_max =filter(table1,atom_name %in% phos_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(phos_max = max))
     phos_min =filter(table1,atom_name %in% phos_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(phos_min = min))
-    table=left_join(phos_mean, phos_max, by='seq')%>%left_join(., phos_min, by='seq')
+    table=left_join(table, phos_mean, by='seq') %>%left_join(., phos_max, by='seq')%>%left_join(., phos_min, by='seq')
+
+    sugar_mean=filter(table1,atom_name %in% sugar_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(sugar_mean = mean))
+    sugar_max =filter(table1,atom_name %in% sugar_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(sugar_max = max))
+    sugar_min =filter(table1,atom_name %in% sugar_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(sugar_min = min))
+    table=left_join(table, sugar_mean, by='seq') %>%left_join(., sugar_max, by='seq')%>%left_join(., sugar_min, by='seq') 
     
-    suger_mean=filter(table1,atom_name %in% suger_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(suger_mean = mean))
-    suger_max =filter(table1,atom_name %in% suger_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(suger_max = max))
-    suger_min =filter(table1,atom_name %in% suger_atoms) %>% group_by(seq) %>%summarise_at(vars(type), funs(suger_min = min))
-    table=left_join(table, suger_mean, by='seq') %>%left_join(., suger_max, by='seq')%>%left_join(., suger_min, by='seq') 
-    
-    base_mean=filter(table1,!atom_name %in% append(phos_atoms,suger_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_mean = mean))
-    base_max =filter(table1,!atom_name %in% append(phos_atoms,suger_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_max = max))
-    base_min =filter(table1,!atom_name %in% append(phos_atoms,suger_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_min = min))
+    base_mean=filter(table1,!atom_name %in% append(phos_atoms,sugar_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_mean = mean))
+    base_max =filter(table1,!atom_name %in% append(phos_atoms,sugar_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_max = max))
+    base_min =filter(table1,!atom_name %in% append(phos_atoms,sugar_atoms)) %>% group_by(seq) %>%summarise_at(vars(type), funs(base_min = min))
     table=left_join(table, base_mean, by='seq')%>%left_join(.,base_max, by='seq') %>%left_join(.,base_min, by='seq') 
     
     return(table)
