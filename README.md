@@ -1,6 +1,6 @@
 # NucleicAcidsQM
-
 Research and development code for MM and QM modelling on nucleic acids.
+
 (a) Run main.R
 1) DNA model generation according to secence.txt.
 2) Molecular mechanics (MM) and semi-quantum mechanical (QM) optimization.
