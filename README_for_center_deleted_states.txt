@@ -1,7 +1,9 @@
 ###############################################################################
 ### (1) Note for BDNA #########################################################
 ###############################################################################
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. (in ./lib/SubQM cen3<-cen1+(cen2-cen1)/3 to cen3<-cen1+(cen2-cen1)/2)
+The following sequences, the initial position of hydrogen cap for the center deletaion state is
+C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. 
+(in ./lib/SubQM cen3<-cen1+(cen2-cen1)/3 to cen3<-cen1+(cen2-cen1)/2)
 
 del1
 GTCTACA
@@ -21,7 +23,9 @@ ACGCCTG
 ACAGTTC
 AACAGCG
 
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. (in ./lib/SubQM cen3<-cen1+(cen2-cen1)/3 to cen3<-cen1+(cen2-cen1)/2.5)
+The following sequences, the initial position of hydrogen cap for the center deletaion state is 
+C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. 
+(in ./lib/SubQM cen3<-cen1+(cen2-cen1)/3 to cen3<-cen1+(cen2-cen1)/2.5)
 
 del2
 ACTACCT
@@ -30,7 +34,8 @@ ACTACCT
 ###############################################################################
 ### (2) Note for ADNA #########################################################
 ###############################################################################
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3.
+The following sequences, the initial position of hydrogen cap for the center deletaion state is 
+C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. 
 
 del1
 CGATGTC
@@ -42,7 +47,8 @@ CAAGTCC
 AGAGGTG
 ACGACGC
 
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3.
+The following sequences, the initial position of hydrogen cap for the center deletaion state is 
+C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3.
 
 del2 
 GTTGCAA
@@ -50,7 +56,8 @@ GTTGCAA
 ###############################################################################
 ### (3) Note for ZDNA #########################################################
 ###############################################################################
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. (in ./lib/SubQM)
+The following sequences, the initial position of hydrogen cap for the center deletaion state is 
+C1'+(N1-C1')/2 or C1'+(N9-C1')/2 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. 
 
 del1
 GGGCTGA
@@ -64,7 +71,8 @@ GATATAC
 AGTTCTA
 CGTATTA
 
-The following sequences, the initial position of hydrogen cap for the center deletaion state is C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. (in ./lib/SubQM)
+The following sequences, the initial position of hydrogen cap for the center deletaion state is
+C1'+(N1-C1')/2.5 or C1'+(N9-C1')/2.5 instead of C1'+(N1-C1')/3 or C1'+(N9-C1')/3. 
 del2
 CAAATGA
 ATGAGTA
