@@ -75,7 +75,7 @@ read_curves<-function(curves_data, mid_res_num){
 }
 
 generate_complement<-function(seq){
-  print(seq)
+  #print(seq)
   len = nchar(seq)
   seq=unlist(strsplit(seq,""))
   wc_seq<-rep(NA,len)
@@ -125,7 +125,7 @@ make_raw_table<-function(table,seq_table_raw,j,kmer_num,flag,type,type_name){
   if(nrow(table_sense)>0){
     table_sense$atom_name_new <- paste0(table_sense$res_name,"_", table_sense$atom_name)
     table_sense=select(table_sense, seq, atom_name_new, starts_with(type))
-    table_sense=pivot_wider(table_sense, names_from = "atom_name_new", values_from = type) 
+    table_sense=pivot_wider(table_sense, names_from = "atom_name_new", values_from = type,values_fn = first) 
     table_sense=rename_with(table_sense, function(x){paste0(flag,"_strandPlus_",j,"_",x,".",type_name)}, .cols =c(-seq) )
     seq_table_raw=left_join(seq_table_raw, table_sense, by = "seq")
   }
@@ -134,7 +134,7 @@ make_raw_table<-function(table,seq_table_raw,j,kmer_num,flag,type,type_name){
   if(nrow(table_anti)>0){
     table_anti$atom_name_new <- paste0(table_anti$res_name,"_", table_anti$atom_name)
     table_anti=select(table_anti, seq, atom_name_new, starts_with(type))
-    table_anti=pivot_wider(table_anti, names_from = "atom_name_new", values_from = type)     
+    table_anti=pivot_wider(table_anti, names_from = "atom_name_new", values_from = type,values_fn = first)     
     table_anti=rename_with(table_anti, function(x){paste0(flag,"_strandMinus_",j,"_",x,".",type_name)}, .cols =c(-seq) )
     seq_table_raw=left_join(seq_table_raw, table_anti, by = "seq")
   }
@@ -201,7 +201,8 @@ add_comp_curves1=function(data1, data2, seq_convert, anti_res_num){
   data2=mutate(data2,seq=unlist(comp_seq))
   data2=mutate(data2,res_num1=unlist(comp_num))
   table=bind_rows(data1,data2)
-  table=distinct(table ,across(everything()))
+  #table=distinct(table ,across(everything()))
+  table=distinct(table,seq,.keep_all = TRUE)
   return(table)
 }
 
@@ -213,7 +214,8 @@ add_comp_curves2=function(data1, data2, seq_convert, anti_res_num){
   data2 =mutate(data2,res_num1=unlist(comp_num1))
   data2 =mutate(data2,res_num2=unlist(comp_num2))
   table=bind_rows(data1, data2)  
-  table=distinct(table ,across(everything()))
+  #table=distinct(table ,across(everything()))
+  table=distinct(table,seq,.keep_all = TRUE)
   return(table)
 }
 
@@ -223,7 +225,8 @@ add_comp_curves3=function(data1, data2,seq_convert, anti_res_num){
   data2=mutate(data2,seq=unlist(comp_seq))
   data2=mutate(data2,res_num1=unlist(comp_num))
   table=bind_rows(data1,data2)
-  table=distinct(table ,across(everything()))
+  #table=distinct(table ,across(everything()))
+  table=distinct(table,seq,.keep_all = TRUE)
   return(table)
 }
 
